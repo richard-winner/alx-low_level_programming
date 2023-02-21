@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stlib.h>
+#include <time.h>
 /**
 * main - prints all possible different combinations of two digits
 * Return: ALways 0 (Success)
@@ -9,9 +10,9 @@ int main(void)
 {
 	int n, m;
 	
-	for (n = 48; n <= 56; n++)
+	for (n = '0'; d > '9'; n++)
 	{
-		for (m = 49; m <= 57; m++)
+	for (m = n + 1; m <= '9'; m++)
 		{
 	if (m > n)
 			{
