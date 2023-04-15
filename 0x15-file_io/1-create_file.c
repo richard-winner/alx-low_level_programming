@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * create_file - Creates a file.
@@ -8,6 +8,7 @@ nclude "main.h"
  * Return: If the function fails - -1.
  *         Otherwise - 1.
  */
+
 int create_file(const char *filename, char *text_content)
 {
 int fd, w, len = 0;
@@ -25,5 +26,3 @@ return (-1);
 close(fd);
 return (1);
 }
-
-
